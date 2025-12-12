@@ -1,5 +1,7 @@
 # Descubrimientos del Challenge
 
+En las siguientes lineas voy a describir mi viaje de aprendizaje de redes neuronales, intente ser muy conceptual y entender principalmente los fundamentos, lo cual fue una muy buena decisión y lo recomiendo para cualquiera que quiera aprender esto a profundidad.
+
 ## La red neuronal no es algo físico
 Al principio me imaginaba algo físico, como un mini procesador que tenía que alojar en algún lado. Fue mi primera sorpresa descubrir que es simplemente código en un notebook. No hay nada que "instalar" o "descargar" más allá de NumPy. La red neuronal existe solo como matrices de números que viven en la memoria de mi computadora mientras el código corre.
 
