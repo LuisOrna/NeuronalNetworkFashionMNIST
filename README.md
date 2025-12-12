@@ -1,3 +1,6 @@
+![Precios (2)](https://github.com/user-attachments/assets/23202b7a-4abb-483c-b69e-1ae9ee65092e)
+
+
 # Descubrimientos del Challenge
 
 En las siguientes lineas voy a describir mi viaje de aprendizaje de redes neuronales, intente ser muy conceptual y entender principalmente los fundamentos, lo cual fue una muy buena decisión y lo recomiendo para cualquiera que quiera aprender esto a profundidad.
@@ -41,11 +44,25 @@ Aprendí que sin funciones de activación, múltiples capas colapsarían matemá
 ## Forward pass: el primer momento revelador
 Implementé la predicción completa y la ejecuté por primera vez, de manera manual sin loops. La red con pesos aleatorios predijo con ~10% de accuracy - puro azar, como esperaba. Pero ver que funcionaba matemáticamente, aunque las predicciones fueran malas, fue increíblemente satisfactorio. Confirmaba que la estructura estaba correcta antes de intentar entrenar. Era como ver el motor arrancar por primera vez, aunque no fuera a ningún lado todavía.
 
+![Precios (1)](https://github.com/user-attachments/assets/7173f4ca-3370-4319-935f-0ff8352446d4)
+
+
+<img width="3305" height="472" alt="image" src="https://github.com/user-attachments/assets/37eba104-12aa-4baf-9024-0e9d228a6083" />
+
+
+
+
 ## Loss y Accuracy: dos formas de medir
 Necesitaba dos métricas diferentes. Loss (Cross-Entropy) mide qué tan "insegura" está la red usando -log(probabilidad_correcta). Penaliza mucho más estar muy equivocado que estar un poco equivocado. Accuracy es simplemente el porcentaje de predicciones correctas - más intuitivo pero menos informativo para el entrenamiento. Entender la diferencia fue clave: loss guía el entrenamiento, accuracy la entiendo yo.
 
 ## Backpropagation: el concepto vs la implementación
 Llegué al momento más intimidante: backpropagation. El concepto es calcular cómo ajustar cada peso para reducir el error, usando la regla de la cadena del cálculo. Podría haber intentado derivar las fórmulas manualmente, pero tomé una decisión pragmática: usar las fórmulas finales directamente. Lo importante era entender QUÉ hace cada fórmula, no demostrar teoremas matemáticos. Estoy aprendiendo ingeniería, no matemática pura.
+
+![Precios](https://github.com/user-attachments/assets/a692e7b7-d545-4809-b106-113c2be18e62)
+
+
+<img width="3566" height="438" alt="image" src="https://github.com/user-attachments/assets/0f6cebc8-6ca4-4d7f-a3f9-c25903879460" />
+
 
 ## El primer entrenamiento: magia pura
 Ejecuté el loop de entrenamiento por primera vez. Una iteración: accuracy subió de 6.6% a 10%. Cien iteraciones: llegó a 55%. La red APRENDIÓ sin que yo le dijera explícitamente cómo clasificar camisetas o zapatos. Solo con matemáticas - ajustando números automáticamente basándose en errores. Este fue el momento "wow" del proyecto. Entender la teoría es una cosa, ver los números mejorando epoch tras epoch es otra completamente diferente.
